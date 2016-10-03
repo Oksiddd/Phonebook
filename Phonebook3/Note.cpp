@@ -3,7 +3,6 @@
 #include "Note.h"
 using namespace std;
 
-
 void Note::Add(string s, int a)
 {
 	tel[a] = s;
@@ -33,7 +32,7 @@ void Note::Input(string filename)
 {
 	int a;
 	string s;
-	ifstream f(filename);
+	f.open(filename);
 	while (!f.eof())
 	{
 		f >> s >> a;
@@ -53,16 +52,14 @@ void Note::Output()
 
 void Note::Save(string filename)
 {
-	ofstream f(filename);
+	f.open(filename);
 	for (auto it = tel.begin(); it != tel.end(); ++it)
 	{
 		f << it->second << " " << it->first << endl;
 	}
-	f.close();
 }
 
 void Note::Close(string filename)
 {
-	fstream f(filename);
 	f.close();
 }
