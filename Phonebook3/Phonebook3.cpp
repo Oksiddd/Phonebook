@@ -7,6 +7,7 @@
 #include "note.h"
 using namespace std;
 
+
 int main()
 {
 	Note obj;
@@ -16,7 +17,7 @@ int main()
 	{
 		system("color 74");
 		system("cls");
-		cout << "This phonebook has " << obj.Size() << " notes." << endl << "----------------------" << endl << "Enter 1 to search" << endl << "Enter 2 to add" << endl << "Enter 3 to delete" << endl << "Enter 4 to show all" << endl << "Enter 5 to stop" << endl << "----------------------" << endl;
+		cout << "This phonebook has " << obj.Size() << " notes." << endl << "-----------------------" << endl << "Enter 1 to search" << endl << "Enter 2 to add" << endl << "Enter 3 to delete" << endl << "Enter 4 to show all" << endl << "Enter 5 to stop" << endl << "-----------------------" << endl;
 		cin >> s1;
 		if (s1 == 1)
 		{

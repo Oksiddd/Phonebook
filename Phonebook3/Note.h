@@ -9,6 +9,7 @@ class Note
 {
 	map <int, string> tel;
 	fstream f;
+
 public:
 
 	virtual void Add(string s, int a);

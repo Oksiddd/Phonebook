@@ -3,6 +3,7 @@
 #include "Note.h"
 using namespace std;
 
+
 void Note::Add(string s, int a)
 {
 	tel[a] = s;
