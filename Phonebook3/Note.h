@@ -19,6 +19,5 @@ public:
 	void Output();
 	void Input(string filename);
 	void Save(string filename);
-	void Close(string filename);
 };
 

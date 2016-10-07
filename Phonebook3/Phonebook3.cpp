@@ -57,5 +57,4 @@ int main()
 		if (s1 == 5) { break; }
 		obj.Save("file.txt");
 	}
-	obj.Close("file.txt");
 }

@@ -39,6 +39,7 @@ void Note::Input(string filename)
 		f >> s >> a;
 		Add(s, a);
 	}
+	f.close();
 }
 
 void Note::Output()
@@ -58,9 +59,5 @@ void Note::Save(string filename)
 	{
 		f << it->second << " " << it->first << endl;
 	}
-}
-
-void Note::Close(string filename)
-{
 	f.close();
 }
